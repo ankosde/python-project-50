@@ -1,8 +1,7 @@
-name: Python CI
+name: test-my-project
 
 on:
   - push
-  - pull_request
 
 jobs:
   build:
@@ -22,12 +21,10 @@ jobs:
         run: |
           pip install poetry
           make install
-      - name: Run linter and pytest
-        run: |
-          make check
+      - name: linter
+        run: make lint
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.2.0
-        if: github.ref_name == 'main'
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
