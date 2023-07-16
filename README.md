@@ -1,6 +1,9 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ankosde/python-project-50/workflows/hexlet-check/badge.svg)](https://github.com/ankosde/python-project-50/actions)
 
+![example workflow](https://github.com/github/docs/actions/workflows/check-myproject.yml/badge.svg)
+
+
 
 <a href="https://codeclimate.com/github/ankosde/python-project-50/maintainability"><img src="https://api.codeclimate.com/v1/badges/dad9a645858bd7d30ccb/maintainability" /></a>
 
